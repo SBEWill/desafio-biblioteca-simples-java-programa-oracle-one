@@ -64,7 +64,7 @@ public class Main {
                 Livro livroParaEmprestar = biblioteca.buscarLivro(titulo);
                 Usuario usuarioRequerente = biblioteca.buscarUsuario(nome);
 
-                if ( titulo!= null && nome != null){
+                if ( livroParaEmprestar != null && usuarioRequerente != null){
                     biblioteca.emprestarLivro(livroParaEmprestar, usuarioRequerente);
                     System.out.println("\nEmpréstimo processado. Detalhes:");
                     System.out.println(usuarioRequerente);
